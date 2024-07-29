@@ -95,14 +95,14 @@ public class RosepadLoadingWindow implements Runnable {
         graphics.setColor(Color.WHITE);
 
         if (error == null) {
-            graphics.drawString("Loading Rosepad...", 10, 10);
+            graphics.drawString("Loading Preview Loader...", 10, 10);
             if (task != null)
                 graphics.drawString(task, 10, 25);
             if (step != null)
                 graphics.drawString(step + (max == null ? "" : " [" + progress + "/" + max + "]"), 10, 40);
         }
         else {
-            graphics.drawString("An error occured while loading Rosepad:", 10, 10);
+            graphics.drawString("An error occured while loading Preview Loader:", 10, 10);
             Throwable err = error;
             int i = 0;
             while (err != null) {
